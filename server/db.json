@@ -25,8 +25,7 @@
     {
       "id": 1,
       "title": "Java for Beginners",
-      "description": "An introductory course to Java programming language.",
-      "categoryId": 0
+      "description": "An introductory course to Java programming language."
     },
     {
       "id": 2,
@@ -43,12 +42,13 @@
     {
       "id": 4,
       "title": "Building RESTful APIs with Spring Boot",
-      "description": "Create robust RESTful APIs using Spring Boot."
+      "description": "Create robust RESTful APIs using Spring Boot.",
+      "categoryId": 2
     },
     {
       "id": 5,
       "title": "TypeScript Essentials",
-      "description": "Get started with TypeScript and its features and more.",
+      "description": "Get started with TypeScript and its features.",
       "categoryId": 3
     },
     {

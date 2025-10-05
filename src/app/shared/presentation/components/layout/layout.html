@@ -8,9 +8,12 @@
       <a mat-button [routerLink]="option.link" routerLinkActive="active">{{ option.label | translate }}</a>
     }
     <app-language-switcher/>
+
   </mat-toolbar-row>
 </mat-toolbar>
 
-<router-outlet/>
+<div class="content-wrapper">
+  <router-outlet/>
+</div>
 
 <app-footer-content/>
