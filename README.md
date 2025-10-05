@@ -2,6 +2,14 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
 
+## Json-server
+
+To simulate an external API, that this app will use, open a terminal in the "server" directory and run:
+
+```bash
+./start.sh
+```
+
 ## Development server
 
 To start a local development server, run:
