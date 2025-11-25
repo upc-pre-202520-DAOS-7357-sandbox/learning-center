@@ -1,5 +1,5 @@
 import {computed, Injectable, Signal, signal} from '@angular/core';
-import {Course} from '../domain/model/course.entity';
+import {Course} from '../domain/model/couse.entity';
 import {Category} from '../domain/model/category.entity';
 import {LearningApi} from '../infrastructure/learning-api';
 import {takeUntilDestroyed} from '@angular/core/rxjs-interop';

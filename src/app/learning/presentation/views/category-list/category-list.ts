@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component, computed, inject, ViewChild} from '@angular/core';
+import {Component, computed, inject, ViewChild} from '@angular/core';
 import {Router} from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
@@ -16,7 +16,7 @@ import {MatSort, MatSortHeader} from '@angular/material/sort';
   templateUrl: './category-list.html',
   styleUrl: './category-list.css'
 })
-export class CategoryList implements AfterViewChecked {
+export class CategoryList {
   readonly store = inject(LearningStore);
   protected router = inject(Router);
 
@@ -38,18 +38,5 @@ export class CategoryList implements AfterViewChecked {
 
   deleteCategory(id: number) {
     this.store.deleteCategory(id);
-  }
-
-  navigateToNew() {
-    this.router.navigate(['learning/categories/new']).then();
-  }
-
-  ngAfterViewChecked() {
-    if (this.dataSource().paginator !== this.paginator) {
-      this.dataSource().paginator = this.paginator;
-    }
-    if (this.dataSource().sort !== this.sort) {
-      this.dataSource().sort = this.sort;
-    }
   }
 }

@@ -1,6 +1,6 @@
 <h1 class="title">{{ 'courses.list-title' | translate }}</h1>
 @if (store.loading()) {
-  <mat-spinner diameter="40"></mat-spinner>
+<mat-spinner diameter="40"></mat-spinner>
 }
 @if (store.error()) {
   <mat-error>{{ store.error() }}</mat-error>
@@ -45,4 +45,4 @@
 
 <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
 
-<button mat-raised-button color="primary" (click)="navigateToNew()">{{ 'courses.new' | translate }}</button>
+<button mat-raised-button color="primary" (click)="router.navigate(['learning/courses/new'])">{{ 'courses.new' | translate }}</button>

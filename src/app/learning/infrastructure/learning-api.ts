@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {BaseApi} from '../../shared/infrastructure/base-api';
-import {Course} from '../domain/model/course.entity';
+import {Course} from '../domain/model/couse.entity';
 import {Category} from '../domain/model/category.entity';
 import {HttpClient} from '@angular/common/http';
 import {CoursesApiEndpoint} from './courses-api-endpoint';

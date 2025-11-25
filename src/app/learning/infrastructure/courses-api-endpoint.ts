@@ -1,5 +1,5 @@
 import {BaseApiEndpoint} from '../../shared/infrastructure/base-api-endpoint';
-import {Course} from '../domain/model/course.entity';
+import {Course} from '../domain/model/couse.entity';
 import {CourseResource, CoursesResponse} from './courses-response';
 import {CourseAssembler} from './course-assembler';
 import {HttpClient} from '@angular/common/http';

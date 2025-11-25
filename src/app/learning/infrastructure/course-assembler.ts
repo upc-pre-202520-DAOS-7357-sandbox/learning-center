@@ -1,5 +1,5 @@
 import {CourseResource, CoursesResponse} from './courses-response';
-import {Course} from '../domain/model/course.entity';
+import {Course} from '../domain/model/couse.entity';
 import {BaseAssembler} from '../../shared/infrastructure/base-assembler';
 
 /**
